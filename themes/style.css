@@ -9,7 +9,7 @@ body{
   font-family: calibri;
   color:#fff;
   box-sizing: border-box;
-  overflow-x:hidden; 
+  overflow-x:hidden;
 }
 *{  }
 #container{
@@ -28,7 +28,7 @@ body{
   background-size: cover;
   background-position: center;
   position: relative;
-
+  transition: .6s;
 
 }
 
@@ -123,6 +123,7 @@ transform: translateY(2px);
 }
 /* main text */
 .sentence{
+  transition: .3s;
   backface-visibility: hidden;
   font-size: 1.3rem;
   color:rgba(255,255,255,.85);
@@ -131,7 +132,7 @@ transform: translateY(2px);
   top:35%;
   left:50%;
   text-align: center;
-  transform: translate(-35%,-50%);
+  transform: translate(-50%,-50%);
   animation:coming 2s ;
   text-shadow: 0 0 3px black;
 }

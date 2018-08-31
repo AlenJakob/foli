@@ -1,14 +1,15 @@
 body{
   background-image:linear-gradient(to left top , rgba(30,45,80,1) , rgba(27,55,70,1));
+  background: #000;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1050px;
   padding: 0;
   margin: 0;
   font-size: 10px;
   font-family: calibri;
   color:#fff;
-  overflow: hidden;
+  box-sizing: border-box;
+  overflow-x:hidden; 
 }
 *{  }
 #container{
@@ -20,9 +21,9 @@ body{
   /* box-shadow:inset 0 0 0 1px rgba(240,0,0,.5); */
 }
 #banner{
-
   height: 100vh;
   background:url("/img/house.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,6 +33,13 @@ body{
 }
 
 .top-bar{display: flex;border-bottom:1px solid rgba(255,255,255,.1); }
+.top-bar-fixed{
+  align-items: center;
+  background: #030e11;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
 .left-bar,.right-bar{
   height: 100px;
 
@@ -102,7 +110,7 @@ animation: anim 4s infinite;
   border-bottom: 1px solid white;
 }
 #navbar ul li:hover{
-  transform: translateY(7px);
+  transform: translateY(4px);
 }
 #navbar ul li:hover a {
   color:rgba(255,255,255,1);
@@ -120,41 +128,27 @@ transform: translateY(2px);
   color:rgba(255,255,255,.85);
   letter-spacing: 4px;
   position: absolute;
-  top:50%;
+  top:35%;
   left:50%;
   text-align: center;
-  transform: translate(-50%,-50%);
+  transform: translate(-35%,-50%);
   animation:coming 2s ;
   text-shadow: 0 0 3px black;
 }
-.sentence
+.sentence h1:first-child{
+  letter-spacing: .76rem;
+  margin-bottom: 0;
+}
+.sentence h1{
+  margin:0;
+}
+.sentence h3{
+  margin:0;
+  word-spacing: .5rem;
+  letter-spacing: .4rem;
+}
+/* ------------------------------------------------------------------------- */
 @keyframes coming {
-  0%{transform: translate(-13rem,-50rem);}
-
-}
-/* -------------------------------------------------------------------------- */
-/* section setting */
-section.section-std{
-
-    /* box-shadow:inset 0 0 0 1px rgba(240,0,0,.5); */
-    height: 500px;
-    /* background: rgba(245,245,255,.87); */
-}
-.main-content{
-  font-size:1rem;
-  background:rgba(255,255,255,.1);
-  height: calc(100% - 100px);
-
-display: flex;
-}
-.main-content .sidebar{
-  width: 30%;
-  border-right:1px solid rgba(255,255,255,.1);
-  display: flex;
-  flex-direction: column;
-  align-items:  center;
- }
-.main-content .content{
-  width: 70%;
+  0%{opacity:.0;transform: translate(-10rem,-50rem);}
 
 }

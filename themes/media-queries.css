@@ -1,5 +1,54 @@
+.btn-toggle{
+  display:none;
+  position: absolute;
+  top: 2rem;
+  right: .5rem;
+}
+.show{
+  transform: translateX(0)!important;
+}
 @media only screen and (max-width: 1040px) {
   body{
-  
+
   }
+
+}
+
+
+@media only screen and (max-width: 960px) {
+  .project-list{
+    padding: 0;
+  }
+  .left-side{
+
+  }
+  .sentence{
+    top:60%;
+  }
+.left-bar{
+  width: 100%;
+
+}
+#navbar ul{
+  transform: translateX(160px);
+  transition: .3s;
+  flex-direction: column;
+  position: absolute;
+  height: 200px;
+  top: 6rem;
+  right: 0;
+  width: auto;
+  border:1px solid white;
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+  padding: 1rem;
+}
+#navbar ul li {
+
+}
+/* btn to hide and show menu */
+.btn-toggle{
+  display:block;
+  height: 30px;
+}
 }

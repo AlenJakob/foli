@@ -1,0 +1,21 @@
+.clear{
+  padding: 0;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* section setting */
+.section-std{
+  height: 100vh;
+  background: white;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+.max-width{
+  max-width: 1280px;
+}

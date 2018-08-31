@@ -1,0 +1,72 @@
+.section-project{
+  color:black;
+  background:#E9F4FF ;
+}
+.section-content{
+  padding: 5rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.card-project{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: .2s;
+}
+.card-project:hover{
+  box-shadow: 0 12px 5px rgba(0,0,0,.08);
+  padding: 0 2rem;
+}
+
+.img-project{
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 180px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.5);
+
+}
+
+/* card text properties:  */
+.card-project .img-project,
+.card-project h2,
+.card-project p,
+.btn-project
+{
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card-project h5{
+  font-size:.8rem;
+  color:#6494DC;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: space-around;
+}
+.card-project p{
+  width:240px;
+  text-justify: inter-word;
+  }
+  .card-projcet h2{
+    color:#4B6764;
+  }
+/* BUTTONS  properties in card project section */
+
+.btn-project{
+  transition: .3s;
+  width: 130px;
+  height: 35px;
+  border:none;
+  cursor: pointer;
+}
+.std-txt-color{color:#fff;text-decoration: none;}
+
+.btn-project:hover{
+  background: transparent;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  transform: translateY(3px);
+}
+.btn-project:hover a{color:#000;}

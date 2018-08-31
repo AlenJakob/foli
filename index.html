@@ -8,9 +8,21 @@
   <!-- styles css -->
   <link rel="stylesheet" href="/themes/style.css">
   <link rel="stylesheet" href="/themes/media-queries.css">
+  <link rel="stylesheet" href="/themes/section.css">
+
+  <link rel="stylesheet" href="/themes/card.css">
+
+  <link rel="stylesheet" href="/themes/section-about.css">
+  <link rel="stylesheet" href="/themes/section-project.css">
+  <link rel="stylesheet" href="/themes/section-gallery.css">
+  <link rel="stylesheet" href="/themes/section-contact.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- ...................................................................... -->
+
+<!-- fontawesomeicon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
-<body>
+<body id="body">
   <!-- container site -->
 <main id="container">
 <!-- top bar menu contain and logo -->
@@ -21,6 +33,7 @@
     </div>
 
     <div class="right-bar">
+      <button class="btn-toggle">menu</button>
    <nav id="navbar">
      <ul>
        <li><a href="#">Home</a></li>
@@ -35,31 +48,159 @@
 
   </div>
 <div class="sentence">
-<h1>Hello There</h1>
-<h1>My Name Is Alen Jakob</h1>
-<h2>Front-end Developer</h2>
-<h2>You Are Wlecome !</h2>
-
+  <h1>Hello There</h1>
+  <h1>I'am Alen Jakob</h1>
+  <h3>Front-end Developer</h3>
 </div>
 </div>
 
-<section class="section-std section-home">
-  <div class="main-content">
-    <div class="sidebar">
-    <h3>links</h3>
-    <ol>
-      <li><a style="color:darkgrey;" href="#">#Project</a></li>
-      <li><a style="color:darkgrey;" href="#">#Project</a></li>
-      <li><a style="color:darkgrey;" href="#">#Project</a></li>
-      <li><a style="color:darkgrey;" href="#">#Project</a></li>
-      <li><a style="color:darkgrey;" href="#">#Project</a></li>
-      <li><a style="color:darkgrey;" href="#">#Project</a></li>
-    </ol>
+<section class="section-std section-about">
+<div class="section-about-inside max-width">
+  <div id="about-top">
 
-    </div>
-      <div class="content">2ssssssss</div>
+  <div class="about-top-left">
+<span ><img class="avatar" src="/img/avatar.png" alt=""></span>
   </div>
+  <div class="about-top-right">
+    <span class="about-header"><h1>Alen Jakob</h1><h3>Front-end Developer</h3></span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Minus cupiditate tempora eveniet, ipsam! Laborum suscipit aliquam beatae,
+        quasi, explicabo vero repellat maiores mollitia!
+        Minus cupiditate tempora eveniet, ipsam! Laborum suscipit aliquam beatae,
+         quasi, explicabo vero repellat maiores mollitia!
+      </p>
+  </div>
+
+
+  </div>
+
+  <div id="about-bottom">
+  <div class="about-skills">
+
+  <span class="card-std card-tech">
+  <div class="btn-std btn-tech tech-txt-color">Technology</div>
+    <ul class="list-box">
+      <li class="list-item "><span class="point tech-bg-color"></span><span class="tech-txt-color">Html</span></li>
+        <li class="list-item"><span class="point tech-bg-color"></span><span>Css</span></li>
+          <li class="list-item"><span class="point tech-bg-color"></span><span>Javascript</span></li>
+    </ul>
+  </span>
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <span class="card-std card-basis">
+  <div class="btn-std btn-basis basis-txt-color">Basic</div>
+    <ul class="list-box">
+      <li class="list-item"><span class="point  basis-bg-color"></span><span>MongoDb</span></li>
+        <li class="list-item"><span class="point basis-bg-color"></span><span>Node.js</span></li>
+          <li class="list-item"><span class="point basis-bg-color"></span><span>Firebase</span></li>
+    </ul>
+  </span>
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <span class="card-std card-lang">
+  <div class="btn-std btn-lang lang-txt-color">Languages</div>
+    <ul class="list-box">
+      <li class="list-item"><span class="point lang-bg-color"></span><span>English - Good</span></li>
+        <li class="list-item"><span class="point lang-bg-color"></span><span>Polish - Good</span></li>
+          <li class="list-item"><span class="point lang-bg-color"></span><span>Dutch - Basic</span></li>
+    </ul>
+  </span>
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  </div>
+
+  </div>
+</div>
 </section>
+
+<section class="section-std section-project">
+<div class="section-content max-width">
+  <!-- project-card -->
+  <div class="card-project">
+  <span class="img-project project-first"></span>
+  <h2>Main Title</h2>
+  <h5><span>category: </span><span>todos list</span></h5>
+  <p>Lorem ipsum dolor sit amet,  Illum dignissimos
+    qui non velit reprehenderit perspiciatis veniam fugit sapiente nulla
+    consectetur adipisicing elit.consectetur adipisicing elit.
+    esse illo hic.</p>
+    <button class="btn-project tech-bg-color"><a class="std-txt-color" href="#">checkout</a></button>
+  </div>
+<!-- project-card  end-->
+
+<!-- project-card -->
+<div class="card-project">
+<span class="img-project project-first"></span>
+<h2>Main Title</h2>
+  <h5><span>category: </span><span>todos list</span></h5>
+<p>Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. adipisicing elit. Illum dignissimos
+  qui non velit reprehenderit perspiciatis consectetur adipisicing elit. veniam fugit sapiente nulla
+  esse illo hic.</p>
+  <button class="btn-project basis-bg-color"><a class="std-txt-color" href="#">checkout</a></button>
+</div>
+  <!-- project-card  end-->
+
+  <!-- project-card -->
+<div class="card-project">
+<span class="img-project project-first"></span>
+<h2>Main Title</h2>
+  <h5><span>category: </span><span>todos list</span></h5>
+<p>Lorem ipsum dolor sit amet, consectetur consectetur  adipisicing elit. adipisicing elit. Illum dignissimos
+  qui non velit reprehenderit perspiciatis veniam fugit sapiente nulla
+  esse illo hic.</p>
+  <button class="btn-project lang-bg-color"><a class="std-txt-color" href="#">checkout</a></button>
+</div>
+  <!-- project-card  end-->
+</div>
+</section>
+  <!-- section end < -->
+
+  <!-- section GALLERY  -->
+<section class="section-gallery section-std">
+  <!-- gallery arrows left & right -->
+<span class="arrow arrow-left"><i class="fas fa-angle-left fa-4x"></i></span>
+<span class="arrow arrow-right"><i class="fas fa-angle-right fa-4x"></i></span>
+
+<div class="section-gallery-content ">
+<header class="gallery-header"><h2>Gallery</h2></header>
+<div class="gallery-content ">
+
+<div class="gallery-img"></div>
+
+  <article class="gallery-txt">
+    <h2>Title Photo</h2>
+<p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero a praesentium,
+  facilis fugiat ducimus quam vitae cupiditate culpa iste, dolore obcaecati
+  quidem.</p>
+  </article>
+
+</div>
+</div>
+
+</section>
+<!-- section end < -->
+<!-- *********************************************************************** -->
+<!-- section CONTACT  -->
+<section class="section-contact section-std">
+
+<div class="contact-content max-width">
+
+<div class="contact-top">
+
+<h2 class="contact-header">Contact</h2>
+<h3>Phone: +31 0586 665 569</h3>
+<h3>E-mail: grafuxa@gmail.com</h3>
+</div>
+
+<div class="contact-mid">
+  <div class="link-box"><div class="box box-linkedin"><a href="#linkedin"><i class="ico-col-linkedin fab fa-linkedin fa-5x"></i></a></div><h2>Linkedin</h2></div>
+  <div class="link-box"><div class="box box-github"><a href="#github"><i class="ico-col-std fab fa-github-square  fa-5x"></i></a></div><h2>Github</h2></div>
+  <div class="link-box"><div class="box box-codepen"><a href="#codpen"><i class="ico-col-std fab fa-codepen  fa-5x"></i></a></div><h2>Codepen</h2></div>
+</div>
+<footer class="foot">Copryright &copy;2018 Alen Jakob All Rights Reserved</footer>
+</div>
+
+
+</section>
+<!-- section end < -->
+
 
 </main>
 <!-- Javascript  -->

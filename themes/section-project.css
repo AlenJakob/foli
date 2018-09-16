@@ -70,3 +70,15 @@
   transform: translateY(3px);
 }
 .btn-project:hover a{color:#000;}
+.project-img-1{
+  background: url("/img/pro-list/1-project.png");
+  background-size: cover;
+}
+.project-img-2{
+  background: url("/img/pro-list/2-project.png");
+  background-size: cover;
+}
+.project-img-3{
+  background: url("/img/pro-list/3-project.png");
+  background-size: cover;
+}

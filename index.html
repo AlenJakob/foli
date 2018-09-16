@@ -39,11 +39,11 @@
       <button class="btn-toggle">menu</button>
    <nav id="navbar">
      <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">About me</a></li>
-       <li><a href="#">Project's</a></li>
-       <li><a href="#">Gallery</a></li>
-       <li><a href="#">Contact</a></li>
+       <li id="home"><a href="#">Home</a></li>
+       <li id="about"><a href="#">About me</a></li>
+       <li id="project"><a href="#">Project's</a></li>
+       <li id="gallery"><a href="#">Gallery</a></li>
+       <li id="contact"><a href="#">Contact</a></li>
 
      </ul>
    </nav>
@@ -117,38 +117,41 @@
 <div class="section-content max-width">
   <!-- project-card -->
   <div class="card-project">
-  <span class="img-project project-first"></span>
-  <h2>Main Title</h2>
-  <h5><span>category: </span><span>todos list</span></h5>
-  <p>Lorem ipsum dolor sit amet,  Illum dignissimos
-    qui non velit reprehenderit perspiciatis veniam fugit sapiente nulla
-    consectetur adipisicing elit.consectetur adipisicing elit.
-    esse illo hic.</p>
-    <button class="btn-project tech-bg-color"><a class="std-txt-color" href="#">checkout</a></button>
+  <span class="img-project project-img-1"></span>
+  <h2>Histories-app</h2>
+  <h5><span>category: </span><span>html/css/js/node/rwd</span></h5>
+  <p>My first application working on Node.js / MongoDb / with some basic bootstrap
+    The project include Register/Login system User / Admin Panel to add/remove Histories.
+    Also Simple Slider very light working only on Css.
+    The application where we can add Our Stories Comment to Other's
+  </p>
+    <button class="btn-project tech-bg-color"><a class="std-txt-color"
+       href="https://apple-crumble-79083.herokuapp.com/histories">checkout</a></button>
   </div>
 <!-- project-card  end-->
 
 <!-- project-card -->
 <div class="card-project">
-<span class="img-project project-first"></span>
-<h2>Main Title</h2>
-  <h5><span>category: </span><span>todos list</span></h5>
-<p>Lorem ipsum dolor sit amet, consectetur consectetur adipisicing elit. adipisicing elit. Illum dignissimos
-  qui non velit reprehenderit perspiciatis consectetur adipisicing elit. veniam fugit sapiente nulla
-  esse illo hic.</p>
-  <button class="btn-project basis-bg-color"><a class="std-txt-color" href="#">checkout</a></button>
+<span class="img-project project-img-2"></span>
+<h2>Tyre-Shop Project</h2>
+  <h5><span>category: </span><span>html/css/js/node/rwd</span></h5>
+<p>Shop-design project working on node.js with "<b>.ejs</b>" templating to better organize code.
+    This Site is full responsive.
+</p>
+  <button class="btn-project basis-bg-color"><a class="std-txt-color"
+    href="https://alen-app.herokuapp.com/">checkout</a></button>
 </div>
   <!-- project-card  end-->
 
   <!-- project-card -->
 <div class="card-project">
-<span class="img-project project-first"></span>
-<h2>Main Title</h2>
-  <h5><span>category: </span><span>todos list</span></h5>
-<p>Lorem ipsum dolor sit amet, consectetur consectetur  adipisicing elit. adipisicing elit. Illum dignissimos
-  qui non velit reprehenderit perspiciatis veniam fugit sapiente nulla
-  esse illo hic.</p>
-  <button class="btn-project lang-bg-color"><a class="std-txt-color" href="#">checkout</a></button>
+<span class="img-project project-img-3"></span>
+<h2>Progress-app</h2>
+  <h5><span>category: </span><span>html/css/js/firebase</span></h5>
+<p>Simple application created javascript and firebase which i use first time
+  what give us possibilities to save our progress</p>
+  <button class="btn-project lang-bg-color"><a class="std-txt-color"
+     href="https://alenjakob.github.io/app-progres/">checkout</a></button>
 </div>
   <!-- project-card  end-->
 </div>
@@ -165,12 +168,19 @@
 <header class="gallery-header"><h2>Gallery</h2></header>
 <div class="gallery-content ">
 
-<div class="gallery-img"></div>
+<div class="gallery-img">
+<img  src="img/gallery/1.jpg" alt="">
+<img class="active" src="img/gallery/2.jpg" alt="">
+<img src="img/gallery/3.jpg" alt="">
+<img class="active" src="img/gallery/4.jpg" alt="">
+<img class="active" src="img/gallery/5.jpg" alt="">
+</div>
 
   <article class="gallery-txt">
     <h2>Title Photo</h2>
-<p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero a praesentium,
-  facilis fugiat ducimus quam vitae cupiditate culpa iste, dolore obcaecati
+<p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Vero a praesentium,  facilis fugiat ducimus quam vitae cupiditate culpa iste,
+  dolore obcaecati
   quidem.</p>
   </article>
 
@@ -207,7 +217,14 @@
 
 </main>
 <!-- Javascript  -->
-<script type="text/javascript" src="/js/test.js"></script>
+  <script type="text/javascript" src="/js/test.js"></script>
+  <script type="text/javascript" data-main="js/config" src="require.js"></script>
+    <script type="text/javascript" data-main="js/customjs/movement" src="js/customjs/jquery-3.3.1.js"></script>
+  <script>require(['config'],function(){
+
+  require(['customjs/movement']);
+  require(['customjs/gallery']);
+  })</script>
 
 </body>
 </html>

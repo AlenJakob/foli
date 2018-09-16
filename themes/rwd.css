@@ -62,6 +62,12 @@
 .card-project{
   width: 50%;
 }
+.card-project .img-project,
+ .card-project h2,
+  .card-project p,
+   .btn-project {
+    margin-bottom: 2rem;
+}
 .card-project p{margin: 0 auto;}
 .card-project h5{justify-content: space-evenly;}
 /* GALLERY RESPONSIVE*/

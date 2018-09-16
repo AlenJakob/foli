@@ -20,6 +20,7 @@
   width: 70%;
 }
 .gallery-img{
+  position: relative;
   margin-right: 1rem;
   display: flex;
   width:250px;
@@ -61,4 +62,18 @@
 }
 .arrow-right{
   right:10%;
+}
+
+/*  */
+.gallery-img{
+  float: left;
+}
+.gallery-img img{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    display: none;
+}
+.gallery-img img.active{
+  display: inline-block;
 }

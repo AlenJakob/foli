@@ -41,7 +41,7 @@
   flex-direction: column;
 }
 .about-skills .card-std{
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 .card-std{
   height: auto;
@@ -57,7 +57,7 @@
   align-items: center;
 }
 .section-content .card-project{
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .card-project{
   width: 50%;
@@ -73,7 +73,7 @@
 /* GALLERY RESPONSIVE*/
 .gallery-content{    flex-direction: column;}
 /* CONTACT RESPONSIVE */
-.contact-mid{flex-direction: column;}
+.contact-mid{flex-direction: column;height: auto;}
 }
 /* ********************************640px************************************ */
 @media (max-width: 640px) {

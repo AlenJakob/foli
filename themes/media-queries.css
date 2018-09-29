@@ -30,6 +30,7 @@
 
 }
 #navbar ul{
+  background: black;
   transform: translateX(160px);
   transition: .3s;
   flex-direction: column;

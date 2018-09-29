@@ -1,4 +1,7 @@
 @media (max-width: 960px) {
+/*  menu  */
+  #navbar ul{
+    background:black;
   /* Hero Header  */
 #banner{
   background-position: left;
